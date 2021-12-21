@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-21T17:10:29 IST" name="Default suite" finished-at="2021-12-21T17:10:53 IST" duration-ms="24286">
+    <groups>
+    </groups>
+    <test started-at="2021-12-21T17:10:29 IST" name="Default test" finished-at="2021-12-21T17:10:53 IST" duration-ms="24286">
+      <class name="com.barcode.scanner.ss1.Barcode_test">
+        <test-method signature="barcode_scanner()[pri:0, instance:com.barcode.scanner.ss1.Barcode_test@618425b5]" started-at="2021-12-21T17:10:29 IST" name="barcode_scanner" finished-at="2021-12-21T17:10:53 IST" duration-ms="24221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- barcode_scanner -->
+      </class> <!-- com.barcode.scanner.ss1.Barcode_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
