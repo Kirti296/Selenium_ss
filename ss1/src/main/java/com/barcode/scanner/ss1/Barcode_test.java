@@ -36,7 +36,8 @@ public class Barcode_test {
 				
 			String barCodeUrl = driver.findElement(By.tagName("img")).getAttribute("src");
 			System.out.println(barCodeUrl);
-			//main 
+			//main code 
+			// new 
 	
 			URL url= new URL(barCodeUrl);
 		BufferedImage bufferedImage =	ImageIO.read(url);
@@ -49,6 +50,8 @@ public class Barcode_test {
 	  
 	  System.out.println(result.getText());
 				//driver.close();
+	  
+	  
 	}
 
 }
