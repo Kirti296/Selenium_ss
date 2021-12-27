@@ -1,124 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-23T17:18:28 IST" name="Default suite" finished-at="2021-12-23T17:18:35 IST" duration-ms="6453">
+  <suite started-at="2021-12-27T16:05:19 IST" name="Default suite" finished-at="2021-12-27T16:05:32 IST" duration-ms="13019">
     <groups>
     </groups>
-    <test started-at="2021-12-23T17:18:28 IST" name="Default test" finished-at="2021-12-23T17:18:35 IST" duration-ms="6453">
-      <class name="com.barcode.scanner.ss1.Barcode_test">
-        <test-method signature="barcode_scanner()[pri:0, instance:com.barcode.scanner.ss1.Barcode_test@272113c4]" started-at="2021-12-23T17:18:35 IST" name="barcode_scanner" finished-at="2021-12-23T17:18:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: no further information
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:96)
-at com.barcode.scanner.ss1.BaseClass.setup(BaseClass.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
-at java.base/java.net.Socket.connect(Socket.java:648)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- barcode_scanner -->
-      </class> <!-- com.barcode.scanner.ss1.Barcode_test -->
+    <test started-at="2021-12-27T16:05:19 IST" name="Default test" finished-at="2021-12-27T16:05:32 IST" duration-ms="13019">
       <class name="com.barcode.scanner.ss1.BaseClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@7526515b]" started-at="2021-12-23T17:18:28 IST" name="setup" finished-at="2021-12-23T17:18:35 IST" duration-ms="6393" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@2f217633]" started-at="2021-12-27T16:05:19 IST" name="setup" finished-at="2021-12-27T16:05:31 IST" duration-ms="12822" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Connection refused: no further information
+              <![CDATA[Connection refused: connect
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: driver.version: AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
+              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
+at java.base/java.util.Optional.orElseGet(Optional.java:369)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
@@ -131,11 +34,11 @@ at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileD
 at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
 at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
 at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:96)
-at com.barcode.scanner.ss1.BaseClass.setup(BaseClass.java:58)
+at com.barcode.scanner.ss1.BaseClass.setup(BaseClass.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
@@ -156,13 +59,14 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
-at java.base/java.net.Socket.connect(Socket.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:240)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.base/java.net.Socket.connect(Socket.java:608)
 at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
 at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
 at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
@@ -186,9 +90,9 @@ at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:10
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
 at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
 at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
@@ -199,21 +103,21 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="readqr()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@7526515b]" started-at="2021-12-23T17:18:35 IST" name="readqr" finished-at="2021-12-23T17:18:35 IST" duration-ms="0" status="SKIP">
+        <test-method signature="readqr()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@2f217633]" started-at="2021-12-27T16:05:32 IST" name="readqr" finished-at="2021-12-27T16:05:32 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Connection refused: no further information
+              <![CDATA[Connection refused: connect
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: driver.version: AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
+              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-E43IBMN', ip: '192.168.1.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
+at java.base/java.util.Optional.orElseGet(Optional.java:369)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
@@ -226,11 +130,11 @@ at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileD
 at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
 at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
 at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:96)
-at com.barcode.scanner.ss1.BaseClass.setup(BaseClass.java:58)
+at com.barcode.scanner.ss1.BaseClass.setup(BaseClass.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
@@ -251,13 +155,14 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
-at java.base/java.net.Socket.connect(Socket.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:240)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.base/java.net.Socket.connect(Socket.java:608)
 at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
 at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
 at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
@@ -281,9 +186,9 @@ at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:10
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
 at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
 at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
@@ -294,7 +199,7 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readqr -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@7526515b]" started-at="2021-12-23T17:18:35 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640260115392" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.barcode.scanner.ss1.BaseClass@2f217633]" started-at="2021-12-27T16:05:32 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640601332104" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

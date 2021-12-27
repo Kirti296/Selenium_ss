@@ -24,28 +24,30 @@ public class BaseClass {
 		  File f = new File("F:\\TEXTEXPRESS\\qrcode-app.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
 	// capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-    
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     
     // Specify the device name (any name)
-     
+        
+        capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     capabilities.setCapability("deviceName", "Kirti-5554");
      
-     
+    capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     // Platform version
      
     //capabilities.setCapability("platformVersion", "4.4.2");
      
      
     // platform name
-     
-    capabilities.setCapability("platformName", "Android");
+    
     capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-     
+    capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     // specify the application package that we copied from appium      
     capabilities.setCapability("app", "f");
-     
+    capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     capabilities.setCapability("appPackage", "com.example.qrcode");
-     
+    
+    capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
      
     // specify the application activity that we copied from appium                   
      
@@ -53,7 +55,7 @@ public class BaseClass {
     capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
     
    // capabilities.setCapability(MobileCapabilityType.BROWSER_NAME , "Chrome");
-    URL url= new URL("http://0.0.0.0:4727/wd/hub");
+    URL url= new URL("http:\\0.0.0.0:4727\\wd\\hub");
     capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
    AndroidDriver driver = new AndroidDriver<>(url, capabilities);
     

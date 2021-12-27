@@ -74,6 +74,7 @@ class ReadQRCodeTest {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+       // capabilities.setCapability(MobileCapabilityType.")
 
         AppiumServiceBuilder builder = new AppiumServiceBuilder().usingAnyFreePort();
         service = AppiumDriverLocalService.buildService(builder);
@@ -91,11 +92,11 @@ class ReadQRCodeTest {
     /**
      * This test capture the screenshot and get the element that contains the QRCode
      * Based on the element points (width and height) the image os cropped
-     * With cropped image we can decode the QRCode with zxing
+     * With cropped image we can decode the QRCode with axing
      */
     @Test
     void readQRCode() {
-        MobileElement qrCodeElement = driver.findElement(By.id("com.example.qrcode:id/imageView"));
+        MobileElement qrCodeElement = driver.findElement(By.id("com.example.qrcode:id/qrcode"));
         File screenshot = driver.getScreenshotAs(OutputType.FILE);
 
         String content = decodeQRCode(generateImage(qrCodeElement, screenshot));

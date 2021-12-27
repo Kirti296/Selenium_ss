@@ -3,11 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.barcode.scanner.ss1.Barcode_test">
-        <methods>
-          <include name="barcode_scanner"/>
-        </methods>
-      </class> <!-- com.barcode.scanner.ss1.Barcode_test -->
       <class name="com.barcode.scanner.ss1.BaseClass">
         <methods>
           <include name="setup"/>
