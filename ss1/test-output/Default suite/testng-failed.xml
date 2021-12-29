@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.barcode.scanner.ss1.BaseClass">
+      <class name="com.barcode.scanner.ss1.ReadQRCodeTest">
         <methods>
           <include name="setup"/>
-          <include name="readqr"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.barcode.scanner.ss1.BaseClass -->
+      </class> <!-- com.barcode.scanner.ss1.ReadQRCodeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
